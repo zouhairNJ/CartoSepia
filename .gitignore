@@ -1,0 +1,68 @@
+# ---- Python / Django ----
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+*.db
+*.env
+.env.*
+.envrc
+
+# Django specific
+/staticfiles/
+media/
+local_settings.py
+
+# ---- React / Node ----
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# ---- Docker ----
+*.pid
+*.tar
+docker-compose.override.yml
+docker.env
+.dockerignore
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- Jenkins / CI ----
+jenkins_home/
+secrets/
+init.groovy.d/
+workspace/
+
+# ---- AWS / Secrets ----
+*.pem
+*.key
+*.crt
+
+# ---- Coverage / Testing ----
+htmlcov/
+coverage.xml
+.cache/
+.pytest_cache/
+
+# ---- Logs ----
+*.log
+
+# ---- Misc ----
+*.bak
+*.tmp
+*.lock
+
+# ---- Force include Jenkinsfile and Dockerfiles even in ignored folders ----
+!Jenkinsfile
+!docker/backend.Dockerfile
+!docker/frontend.Dockerfile
